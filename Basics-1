@@ -1,0 +1,43 @@
+// JAVA Basics
+JDK consists of
+Development tools + JRE ( JAVA class library + JVM)
+
+when we run javac First.java --> that java file is converted into bytecode with the help of JDK and this bytecode i.e First.class file is executed with the help of JVM inside JRE.
+
+JDK 17 is LTS (Long Term Support) means stable version with no bugs.
+
+In the java code methods are always called using brackets for eg main(), println() etc
+
+System.out.println() --> System is a class, out is an object and println is a method
+
+Scanner - to use scanner we have to import util package
+System.out --> attached to the monitor
+System.in --> take input from keyboard 
+
+import java.util.*;
+Scanner sc = new Scanner(System.in);
+
+int a,b,c;
+System.out.println("Enter 2 Nos");
+a = sc.nextInt();
+b = sc.nextInt();
+
+c = a+b;
+s.o.p("sum of 2 no's is", c);
+
+nextInt() -> Reads integer
+nextFloat() -> Reads float value
+nextDouble() -> Reads double value
+next() -> it ready only first word in the string i.e if we enter "how are you" from keyword only "how" is taken, to consider entire sentence we have to use nextLine
+nextLine() -> Reads entire sentence
+nextByte() 
+nextShort()
+nextLong()
+nextBoolean()
+
+hasNextInt() -> Return true or false based on checking if next value is integer or not
+hasNextFloat() 
+
+useRadix(2) ->takes binary value and return decimal value
+
+If we want to know all the methods available inside the scanner then we have to use command "javap java.util.scanner" but this cmd is not working in latest JDK.
