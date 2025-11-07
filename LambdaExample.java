@@ -9,13 +9,18 @@
 //}
 
 
+Interface Shape {
+    void draw();
+}
+
+
 public class LambdaExample {
     public static void main(String[] args){
         Shape rectangle = () -> System.out.println("rectangle drawn");
 
         print(rectangle);
     }
-    public static void print(Shape shape){
+    public static void print(Shape: Shape shape){
         shape.draw();
     }
 }
